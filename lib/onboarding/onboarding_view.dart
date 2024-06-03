@@ -22,13 +22,13 @@ class _OnboardingViewState extends State<OnboardingView> {
     return Scaffold(
       bottomSheet: Container(
         color: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         child: isLastPage ? getStarted() : Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             TextButton(
                 onPressed: () => pageController.jumpToPage(controller.items.length-1),
-                child: const Text("Skip"),
+                child: const Text("Skip", style: TextStyle(fontSize: 18, color: Colors.black),),
             ),
 
             SmoothPageIndicator(
@@ -40,7 +40,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                   dotColor: Colors.grey,
                   dotHeight: 12,
                   dotWidth: 12,
-                  activeDotColor: Colors.blue,
+                  activeDotColor: Colors.black,
                 ),
             ),
 
@@ -48,7 +48,7 @@ class _OnboardingViewState extends State<OnboardingView> {
               onPressed: () => pageController.nextPage(
                   duration: const Duration(milliseconds: 600),
                   curve: Curves.easeIn),
-              child: const Text("Next"),
+              child: const Text("Next", style: TextStyle(fontSize: 18, color: Colors.black),),
             )
           ],
         ),
@@ -67,7 +67,7 @@ class _OnboardingViewState extends State<OnboardingView> {
                   const SizedBox(height: 15,),
                   Text(controller.items[index].title, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
                   const SizedBox(height: 15,),
-                  Text(controller.items[index].description, style: const TextStyle(color: Colors.grey, fontSize: 17), textAlign: TextAlign.center,),
+                  Text(controller.items[index].description, style: const TextStyle(color: Colors.grey, fontSize: 22), textAlign: TextAlign.center,),
                 ],
               );
             }

@@ -5,23 +5,18 @@ class OnboardingItems {
   List<OnboardingInfo> items = [
     OnboardingInfo(
         title: "About Me",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-        image: "assets/Object.png",
+        description: "My name is Ravshanbek. I am 23 years old. I create mobile applications for Android and IOS operating systems using Flutter and Dart technologies.",
+        image: "assets/img_1.jpg",
     ),
     OnboardingInfo(
-      title: "title",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      image: "assets/Object2.png",
+      title: "Study",
+      description: "In my field, I studied at PDP Academy, Udemy and Uacademy educational centers. I am currently studying at the Kokan branch of TSTU named after Islam Karimov.",
+      image: "assets/img_2.jpg",
     ),
     OnboardingInfo(
-      title: "title",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      image: "assets/Object3.png",
-    ),
-    OnboardingInfo(
-      title: "title",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
-      image: "assets/Object2.png",
+      title: "Interests",
+      description: "I am interested in news and modern technologies in the field of mobile programming.",
+      image: "assets/img_3.jpg",
     ),
   ];
 }
